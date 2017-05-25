@@ -1,0 +1,47 @@
+﻿<div class="container">
+    <div class="row">
+        <h2>Simple Register Application</h2>
+        <hr />
+        <div class="row">
+            <div class="col-sm-8">
+                <h4 class="page-header">Default Implementation</h4>
+                @*Form Body Start*@
+                <form role="form">
+                    <div class="form-group float-label-control">
+                        <label for="Name">İsim</label>
+                        <input type="text" class="form-control" id="Name" placeholder="İsim">
+                    </div>
+                    <div class="form-group float-label-control">
+                        <label for="SurName">Soy İsim</label>
+                        <input type="text" class="form-control" id="SurName" placeholder="Soy İsim">
+                    </div>
+                    <div class="form-group float-label-control">
+                        <label for="">E-Posta</label>
+                        <input type="email" class="form-control" id="emailUser" placeholder="E-Posta Adresiniz">
+                    </div>
+                    <hr/>
+                    <div class="form-group float-label-control">
+                        <label for="">Bizi bir arkadaşınıza önerin</label>
+                        <input type="email" class="form-control" id="emailGuest" placeholder="Bizi bir arkadaşınıza önerin">
+                    </div>
+                    <hr />
+                    <div>
+                        <a class="btn btn-block btn-primary" id="submitForm">Kaydet</a>
+                    </div>
+                </form>
+                @*Form Body End*@
+            </div>
+        </div>
+    </div>
+</div>
+@*Page CSS*@
+<link href="~/Assets/css/pages/index.css" rel="stylesheet" />
+@*Page CSS End*@
+@*Page scripts*@
+<script src="~/Assets/js/Pages/index.js"></script>
+<script src="~/Assets/js/General/FloatLabel.js"></script>
+<script>
+    //initialize JavaScript Functions
+    Index.init();
+</script>
+@*Page scripts End*@
