@@ -2,13 +2,15 @@
     return {
         //main function to initiate the module
         init: function () {
-            $('#submitForm').off('click').on('click'){
+            $('#submitForm').off("click").on("click", function (){                
                 setBsUser();
-            }
+            };
+
             sendMails();
         }
     }
 }
+//Set BsUser Method with index form data
 var setBsUser = function () {
     // Gather Form Info
     var name = $('#Name').val();
